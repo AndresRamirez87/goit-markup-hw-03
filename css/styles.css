@@ -10,9 +10,23 @@ body {
   background-color: var(--var-color-back-text);
   color: var(--var-color-text-black);
 }
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section {
   margin: 0 auto;
@@ -20,15 +34,20 @@ body {
   padding-top: 94px;
   /* background: #2196F3; */
 }
-.head {
+.header-class {
   background: #ffffff;
   height: 80px;
-  display: flex;
   border-bottom: 1px solid #ececec;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .browser {
   display: flex;
-  padding-left: 15px;
+  align-items: center;
+  gap: 93px;
 }
 main li {
   list-style: none;
@@ -36,6 +55,7 @@ main li {
 .link-brow {
   display: flex;
   list-style: none;
+  gap: 50px;
 }
 
 .browser .link-brow .current {
@@ -61,14 +81,12 @@ main li {
   font-size: 14px;
   line-height: 1.7142em;
   letter-spacing: 0.02em;
-  margin-right: 50px;
 }
 .link:hover,
 .link:focus,
 .link-current:hover,
 .link-current:focus {
   color: var(--var-color-textdeco-ho-fo);
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
 }
 .web-nav {
   width: 145px;
@@ -90,9 +108,7 @@ main li {
 .links-datos {
   display: flex;
   list-style: none;
-  margin: auto;
-  padding: 0px;
-  padding-left: 290px;
+  gap: 50px;
 }
 
 .links-datos a {
@@ -103,7 +119,6 @@ main li {
   line-height: 1.7142em;
   letter-spacing: 0.02em;
   color: var(--var-color-text-gris);
-  margin-right: 50px;
   padding: 0px;
 }
 
@@ -177,8 +192,6 @@ main li {
 
 .detail {
   display: flex;
-  margin: auto;
-  width: 80%;
 }
 .details.main {
   font-family: 'Roboto';
@@ -198,17 +211,6 @@ main li {
   line-height: 1.5rem;
   letter-spacing: 0.03em;
   color: var(--var-color-text-gris);
-}
-.details-main:hover,
-.details-main:focus,
-.details-main:active {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
-
-.contents-main:hover,
-.contents-main:focus,
-.contents-main:active {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
 }
 .work-main {
   font-family: 'Roboto';
@@ -233,9 +235,12 @@ main li {
   margin: 0px;
   padding: 0px;
 }
+.benefist-list {
+  display: flex;
+  justify-content: space-around;
+}
 .detall {
-  margin-left: 30.26px;
-  margin-right: 23.42px;
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .img {
