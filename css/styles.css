@@ -35,6 +35,8 @@ p {
   /* background: #2196F3; */
 }
 .header-class {
+  display: flex;
+  align-items: center;
   background: #ffffff;
   height: 80px;
   border-bottom: 1px solid #ececec;
@@ -102,7 +104,6 @@ main li {
   text-align: right;
   letter-spacing: 0.03em;
   color: var(--var-color-textdeco-ho-fo);
-  /* text-decoration: underline 3px var(--var-color-textdeco-ho-fo); */
 }
 
 .links-datos {
@@ -243,23 +244,12 @@ main li {
   margin-top: 90px;
   flex-basis: calc((100% - 90px) / 4);
 }
-
-.img {
-  width: 373.16px;
-  height: 323.7px;
-  margin-right: 30.26px;
-}
-.img:hover,
-.img:focus,
-.img:active {
-  border: 2px solid var(--var-color-textdeco-ho-fo);
-}
 .team {
   display: flex;
   flex-wrap: wrap;
   background: #f5f4fa;
   padding-bottom: 94px;
-  padding-top: 188px;
+  padding-top: 90px;
 }
 .ourteam {
   margin: auto;
@@ -277,12 +267,6 @@ main li {
   display: flex;
   margin: auto;
   padding: 0px;
-}
-
-.member:hover,
-.member:focus,
-.member:active {
-  border: 2px solid var(--var-color-textdeco-ho-fo);
 }
 .memb {
   background: #ffffff;
@@ -312,17 +296,6 @@ main li {
   letter-spacing: 0.03em;
   color: var(--var-color-text-gris);
 }
-.team-main:hover,
-.team-main:focus,
-.team-main:active {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
-.profession-main:hover,
-.profession-main:focus,
-.profession-main:active {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
-
 .foot1 {
   height: 252px;
   padding-left: 15px;
@@ -344,14 +317,6 @@ main li {
   letter-spacing: 0.03em;
   color: var(--var-color-textdeco-ho-fo);
 }
-.web-foot:focus,
-.web-foot:hover {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
-.addres:focus,
-.addres:hover {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
 .addres {
   font-family: 'Roboto';
   font-style: normal;
@@ -361,10 +326,7 @@ main li {
   letter-spacing: 0.03em;
   color: var(--var-color-back-text);
 }
-.email-2:focus,
-.email-2:hover {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
+
 .email-2 {
   font-family: 'Roboto';
   font-style: normal;
@@ -374,10 +336,7 @@ main li {
   letter-spacing: 0.03em;
   color: var(--var-color-text-gris);
 }
-.phone-2:focus,
-.phone-2:hover {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
+
 .phone-2 {
   font-family: 'Roboto';
   font-style: normal;
@@ -392,14 +351,12 @@ main li {
 .sites-a:hover,
 .sites-a:focus,
 .sites-a:active {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
   background: var(--var-color-textdeco-ho-fo);
   color: var(--var-color-back-text);
 }
 .sites:hover,
 .sites:focus,
 .sites:active {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
   background: var(--var-color-textdeco-ho-fo);
   color: var(--var-color-back-text);
 }
@@ -434,6 +391,7 @@ main li {
   width: 128px;
   height: 38px;
   margin-right: 12px;
+  cursor: pointer;
   background: #f5f4fa;
   border-radius: 4px;
   border: 1px;
@@ -446,19 +404,8 @@ main li {
   letter-spacing: 0.03em;
   color: var(--var-color-text-black);
 }
-
-.areas:focus,
-.areas:active,
-.areas:hover {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
-.description:focus,
-.description:active,
-.description:hover {
-  text-decoration: underline 3px var(--var-color-textdeco-ho-fo);
-}
-
 .areas {
+  margin: 24px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -467,24 +414,30 @@ main li {
   letter-spacing: 0.06em;
   color: var(--var-color-text-black);
 }
+.description {
+  margin: 24px;
+}
 
 .box {
-  box-sizing: border-box;
-  margin-right: 12px;
-  width: 370px;
-  height: 423px;
+  flex-basis: calc((100% - 60px) / 3);
   background: var(--var-color-back-text);
-  border: 0px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  cursor: pointer;
+}
+
+.box:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .group {
   margin-top: 56px;
 }
+
 .conte {
   display: flex;
   margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 .foot2 {
   height: 252px;
