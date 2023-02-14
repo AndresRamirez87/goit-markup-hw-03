@@ -236,6 +236,9 @@ main li {
   margin: 0px;
   padding: 0px;
 }
+.img {
+  margin-right: 23.42px;
+}
 .benefist-list {
   display: flex;
   justify-content: space-around;
