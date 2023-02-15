@@ -312,6 +312,13 @@ main li {
 .direct-foot {
   list-style: none;
 }
+.foot2 {
+  height: 252px;
+  padding-left: 15px;
+  padding-top: 60px;
+  margin-top: 40px;
+  background: #2f303a;
+}
 
 .web-foot {
   font-family: 'Raleway';
@@ -446,13 +453,7 @@ main li {
   flex-wrap: wrap;
   gap: 25px;
 }
-.foot2 {
-  height: 252px;
-  padding-left: 15px;
-  padding-top: 60px;
-  margin-top: 40px;
-  background: #2f303a;
-}
+
 .box-desc {
   padding: 10px 24px;
 }
