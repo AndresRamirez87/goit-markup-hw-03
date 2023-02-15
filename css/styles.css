@@ -22,6 +22,11 @@ p {
   margin: 0;
   padding: 0;
 }
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -236,9 +241,7 @@ main li {
   margin: 0px;
   padding: 0px;
 }
-.img {
-  margin-right: 23.42px;
-}
+
 .benefist-list {
   display: flex;
   justify-content: space-around;
@@ -303,7 +306,6 @@ main li {
   height: 252px;
   padding-left: 15px;
   padding-top: 60px;
-  margin-top: 94px;
   background: #2f303a;
 }
 
@@ -408,7 +410,6 @@ main li {
   color: var(--var-color-text-black);
 }
 .areas {
-  margin: 24px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -418,7 +419,10 @@ main li {
   color: var(--var-color-text-black);
 }
 .description {
-  margin: 24px;
+  color: var(--var-color-text-gris);
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .box {
@@ -446,6 +450,9 @@ main li {
   height: 252px;
   padding-left: 15px;
   padding-top: 60px;
-  margin-top: 82px;
+  margin-top: 40px;
   background: #2f303a;
+}
+.box-desc {
+  padding: 10px 24px;
 }
